@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Udemy_Scraper.Models.UdemyLink>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Scraper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="col header-text">
+            <div class=header-title row>
+                <h3 class="header-text">Udemy Scraper</h3>
+            </div>
+            
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-3">
+                    <div class="card">
+                        <a href="@item.link">
+
+                        <img class="card-img-top" src="@item.image" alt="Card image"/>
+                        </a>
+                             
+                        <div class="card-body">
+                            <a class="link-udemy" href="@item.link">@item.name</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://github.com/qj365">github.com/qj365</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

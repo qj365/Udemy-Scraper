@@ -1,0 +1,36 @@
+﻿html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.col-3 {
+    padding-top: 15px;
+}
+
+.header-title {
+    background-color: var(--yellow);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.header-text {
+    line-height: 170%;
+    font-weight: 400;
+}
+
+.container-fluid {
+    margin: 15px 0;
+}
+
+.card {
+    height: 18rem;
+}
+
+.link-udemy {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
